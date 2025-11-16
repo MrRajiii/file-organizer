@@ -32,7 +32,9 @@ This application is built to demonstrate strong **Object-Oriented Design (OOP)**
 
 ## 🖼️ Application Demonstration
 
+![Main Application Window Preview](file-organizer-main-window.png)
 
+*A view of the main organization rules, source/destination selectors, and action buttons.*
 
 
 
