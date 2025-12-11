@@ -1,47 +1,93 @@
-# File Organizer Pro with Duplicate Detection
+# 📂 File Organizer Pro with Multi-Threaded Duplicate Detection
 
-![PyQt](https://img.shields.io/badge/PyQt-5.15.9-blue)
-![Python](https://img.shields.io/badge/Python-3.7%2B-green)
-![License](https://img.shields.io/badge/License-MIT-yellow)
+A professional, cross-platform desktop application built with Python and PyQt5 designed for **efficient file management** and **accurate duplicate removal**.
 
-A professional desktop application for organizing files and detecting duplicates, built with Python and PyQt5.
+<p align="left">
+    <img src="https://img.shields.io/badge/PyQt-5.15.9-blue?style=for-the-badge&logo=qt&logoColor=white" alt="PyQt Badge">
+    <img src="https://img.shields.io/badge/Python-3.7%2B-green?style=for-the-badge&logo=python&logoColor=white" alt="Python Badge">
+    <img src="https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge&logo=opensourceinitiative&logoColor=white" alt="License Badge">
+</p>
 
-![Application Screenshot](screenshot.png) _(Replace with actual screenshot)_
+## 🌟 Key Features & Technical Highlights
 
-## Features ✨
+This application is built to demonstrate strong **Object-Oriented Design (OOP)** and efficient resource management.
 
-- **Smart File Organization** - Automatically sort files by type (Images, Documents, Audio, etc.)
-- **Duplicate Detection** - Find duplicates by filename or content (MD5 hash)
-- **Modern GUI** - Professional interface with dark/light theme support
-- **Preview Mode** - See changes before executing
-- **Progress Tracking** - Real-time progress bar and status updates
-- **Custom Rules** - Add your own file type categories and extensions
+### File Organization & Cleanup
+* **Intelligent Sorting:** Automatically categorizes and moves files (Images, Documents, Archives, Code, etc.) into designated folders.
+* **Custom Rule Editor:** Users can easily **add custom file type rules** (categories and extensions) directly through the GUI.
+* **Safe Execution:** Utilize the **Preview Mode** to review all proposed file moves before executing the organization process.
 
-## Installation 🛠️
+### Multi-Threaded Duplicate Management
+* **Background Processing:** Utilizes **PyQt5 QThreads** to run file scanning and organization tasks in the background, ensuring the GUI remains responsive and avoids freezing.
+* **Accurate Hashing:** Detects duplicates by comparing **MD5 content hashes**, providing highly accurate identification regardless of filename.
+* **Flexible Scanning:** Supports duplicate detection based on **Filename** or **File Content**.
+* **Dedicated Duplicates Manager:** Provides a separate window to review duplicate groups, select files, and safely delete unwanted copies.
+
+### User Interface & Experience
+* **Modern GUI:** A polished, intuitive interface designed with PyQt5.
+* **Dynamic Theming:** Includes support for both **Light and Dark Modes** using QPalette.
+* **Real-Time Feedback:** Features a progress bar and status labels for monitoring long-running operations.
+
+---
+
+## 🖼️ Application Demonstration
+
+![Main Application Window Preview](file-organizer-main-window.png)
+
+*A view of the main organization rules, source/destination selectors, and action buttons.*
+
+
+
+---
+
+## ⚙️ Installation & Running the Application
 
 ### Prerequisites
 
-- Python 3.7+
-- pip package manager
+* Python 3.7+
+* The `pip` package manager
 
-### Steps
+### Setup Steps
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/file-organizer.git
-   cd file-organizer
-   ```
+1.  **Clone the Repository:**
+    ```bash
+    git clone [https://github.com/MrRajiii/File-Organizer.git](https://github.com/MrRajiii/File-Organizer.git)
+    cd File-Organizer
+    ```
 
-Usage Guide
+2.  **Install Dependencies:**
+    ```bash
+    pip install PyQt5
+    ```
 
-1. Select source and destination folders
-2. Configure detection settings:
-   - Toggle duplicate detection
-   - Choose filename or content comparison
-3. Set organization rules
-4. Preview changes before executing
+3.  **Run the Application:**
+    ```bash
+    python organizer.py 
+    # (or python [your_main_script_name].py)
+    ```
 
-Support ☕
-If you find this project useful, consider starring the repository or buying me a coffee!
+### Usage Guide
 
-Buy Me A Coffee
+1.  **Select Folders:** Use the "Browse" buttons to specify the **Source** and **Destination** directories.
+2.  **Set Rules:** Toggle the built-in organization rules or use the **"Add Custom Rule"** section to define new categories.
+3.  **Scan:** Click **"Scan for Duplicates"** to identify redundant files using the chosen method (Filename or Content).
+4.  **Execute:** Use **"Preview Changes"** for a dry run, then click **"Organize Files"** to move the files according to the active rules.
+
+---
+
+## 💡 Code Structure & Engineering
+
+This project is structured around key OOP principles for maintainability:
+
+* **`FileOrganizerApp` (QMainWindow):** Handles all UI initialization and user interaction.
+* **`ScanThread` (QThread):** Responsible for computationally heavy MD5 hashing and duplicate detection.
+* **`OrganizeThread` (QThread):** Handles the file moving (`shutil.move`) and directory creation.
+* **Signals & Slots:** Used extensively to communicate progress and results from the background threads back to the main GUI.
+
+---
+
+## 🤝 Support & Next Steps
+
+If you find this project useful, please give it a star ⭐️. Feel free to open issues for bugs or feature suggestions!
+
+---

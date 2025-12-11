@@ -1,16 +1,58 @@
-# Python
+# -----------------------------------------------------------------------
+# PYTHON ENVIRONMENT & CACHE
+# -----------------------------------------------------------------------
+# Byte-compiled / optimized / backup files
 __pycache__/
 *.py[cod]
 *$py.class
 
-# Virtual Environment
-venv/
+# Environments
 .env/
+venv/
+env/
+/bin/
+/include/
+/lib/
+/lib64/
 
-# IDE
+# Jupyter Notebook files
+.ipynb_checkpoints
+
+# -----------------------------------------------------------------------
+# IDE & EDITOR FILES
+# -----------------------------------------------------------------------
+# VS Code
 .vscode/
+
+# PyCharm/IntelliJ
 .idea/
 
-# System
+# -----------------------------------------------------------------------
+# GUI & BUILD FILES (PyQt/Qt Designer)
+# -----------------------------------------------------------------------
+# Ignore compiled resource files and UI files if they are generated
+# and not directly part of the source control.
+*.qrc
+*.ui
+*.ts
+*.qm
+
+# Build output directories
+/build/
+/dist/
+*.spec
+
+# -----------------------------------------------------------------------
+# OPERATING SYSTEM FILES
+# -----------------------------------------------------------------------
+# macOS
 .DS_Store
+
+# Windows
 Thumbs.db
+
+# -----------------------------------------------------------------------
+# LOGS AND TEMP FILES
+# -----------------------------------------------------------------------
+*.log
+*.tmp
