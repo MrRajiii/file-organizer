@@ -29,8 +29,8 @@ This application is built to demonstrate strong **Object-Oriented Design (OOP)**
 
 ---
 
-### 🖼️ Application Demonstration
-
+### 🖼️ Application View
+![File Organizer Pro Updated UI](file-organizer-main-window.png)
 
 
 A view of the main organization rules, source/destination selectors, and action buttons.
