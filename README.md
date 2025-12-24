@@ -1,4 +1,9 @@
 # 📂 File Organizer Pro with Multi-Threaded Duplicate Detection
+<p align="center">
+    <img src="https://img.shields.io/badge/PyQt-5.15.9-blue?style=for-the-badge&logo=qt&logoColor=white" alt="PyQt Badge">
+    <img src="https://img.shields.io/badge/Python-3.7%2B-green?style=for-the-badge&logo=python&logoColor=white" alt="Python Badge">
+    <img src="https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge&logo=opensourceinitiative&logoColor=white" alt="License Badge">
+</p>
 
 A professional, cross-platform desktop application built with Python and PyQt5 designed for **efficient file management** and **accurate duplicate removal**.
 
