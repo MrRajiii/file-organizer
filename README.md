@@ -1,4 +1,4 @@
-# 📂 File Organizer Pro with Multi-Threaded Duplicate Detection
+# File Organizer Pro with Multi-Threaded Duplicate Detection
 <p align="left">
     <img src="https://img.shields.io/badge/PyQt-5.15.9-blue?style=for-the-badge&logo=qt&logoColor=white" alt="PyQt Badge">
     <img src="https://img.shields.io/badge/Python-3.7%2B-green?style=for-the-badge&logo=python&logoColor=white" alt="Python Badge">
@@ -9,7 +9,7 @@ A professional, cross-platform desktop application built with Python and PyQt5 d
 
 ---
 
-### 🌟 Key Features & Technical Highlights
+### Key Features & Technical Highlights
 
 This application is built to demonstrate strong **Object-Oriented Design (OOP)** and efficient resource management.
 
@@ -34,7 +34,7 @@ This application is built to demonstrate strong **Object-Oriented Design (OOP)**
 
 ---
 
-### 🖼️ Application View
+### Application View
 ![File Organizer Pro Updated UI](file-organizer-main-window.png)
 
 
@@ -42,7 +42,7 @@ A view of the main organization rules, source/destination selectors, and action 
 
 ---
 
-### ⚙️ Installation & Running the Application
+### Installation & Running the Application
 
 #### Prerequisites
 
@@ -76,7 +76,7 @@ A view of the main organization rules, source/destination selectors, and action 
 
 ---
 
-### 💡 Code Structure & Engineering (Updated)
+### Code Structure & Engineering (Updated)
 
 This project is structured around key OOP principles with a clear separation of concerns (Model-View-Service):
 
